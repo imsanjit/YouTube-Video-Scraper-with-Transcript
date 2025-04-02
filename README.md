@@ -18,7 +18,7 @@ How to Scrape YouTube Data using Python.
 1. Go to the YouTube channel
 2. Copy all text after "https://www.youtube.com/channel/"
 
-   or
+**or**
    
 1. Go to the YouTube channel page.
 2. "View page source" or "CRTL + U", then search for "channel/" word. You will find URL something like this: https://www.youtube.com/channel/UCtdaxC.
