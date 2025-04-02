@@ -12,10 +12,10 @@ import json
 import csv
 from google.colab import files
 
-# taking input from user for youtube api key and youtube channel id
+# taking input from user for youtube api key and YouTube channel ID
 
-api_key = 'AIzaSyCzV48CWFgrAgEUTay1h6xh0EsDXRh8STY' # Add your "youtube api v3"api key here (sangya)
-channel_id = 'UCnBVMVxqw6TOYdwPBlIJXyQ' #channel id needs to be fetch
+api_key = '' # Add your "youtube api v3"api key here (sangya)
+channel_id = '' #channel id needs to be fetch
 
 # Get upload playlist id
 
@@ -68,12 +68,12 @@ def get_channel_videos(channel_id):
 
     return videos
 
-# scraping videos from youtube upload playlist
+# scraping videos from YouTube upload playlist
 
 videos = get_channel_videos(channel_id)
 print(f'\nTotal number of video are: {len(videos)}')
 
-# get all video from youtube channel in json file
+# get all video from YouTube channel in the json file
 
 all_Yt_Details = []
 
@@ -97,7 +97,7 @@ with open('youtube_data.json', 'w', encoding='utf-8') as f:
     json.dump(all_Yt_Details, f, ensure_ascii=False, indent=4)
 files.download("youtube_data.json")
 
-## get all video from youtube channel in excel file
+## get all videos from YouTube channel in Excel file
 
 data = pd.read_json('/content/youtube_data.json')
 data.to_csv('youtube_data.csv', index= False, encoding='utf-8')
