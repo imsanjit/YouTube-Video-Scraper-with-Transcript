@@ -14,7 +14,7 @@ from google.colab import files
 
 # taking input from user for youtube api key and YouTube channel ID
 
-api_key = '' # Add your "youtube api v3"api key here (sangya)
+api_key = '' # Add your "youtube api v3"api key here
 channel_id = '' #channel id needs to be fetch
 
 # Get upload playlist id
